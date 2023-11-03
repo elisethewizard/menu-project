@@ -1,19 +1,32 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
        <link rel="stylesheet" href="index.css">
        <link rel="preconnect" href="https://fonts.googleapis.com">
        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-       <link href="https://fonts.googleapis.com/css2?family=Inter&family=Smythe&display=swap" rel="stylesheet"> 
+       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Smythe&display=swap" rel="stylesheet"> 
     </head>
     
-    <body>	
-    <header></header>
+    <body>
+    <header>
+        <h1>Jimmy's Diner</h1>
+        <h2>The best burgers and pizzas in town.</h2>
+    </header>
     
     <main>
         <div id='menu-container'></div>
+        <div id='checkout-container'></div>
     </main>
     
-    <script src="index.js" type='module'></script>
+    <form id='payment-form'>
+        <h2 id='payment-title'>Enter card details</h2>
+        <input type="text" id="pay-name" name="pay-name" placeholder="Enter your name" required>
+        <input type="number" id="pay-card" name="pay-card" placeholder="Enter card number" required>
+        <input type="number" id="pay-cvv" name="pay-cvv" placeholder="Enter CVV" required>
+        <button id='pay-btn' class ='btn-lime' type='submit'>Pay</button>
+    </form>
+        
+	<script src="index.js" type='module'></script>
     </body>
     
 </html>
